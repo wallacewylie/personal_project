@@ -4,23 +4,25 @@ body {
     /*To hide the horizontal scroller appearing during the animation*/
     overflow: hidden;
     overflow-y: scroll;
+    background-color: #cc9900;
 }
 
 
 
 .headline {
     text-align: center;
-    font-size: large;
+    font-size: 40px;
     border: transparent;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
 }
 
-.headline, h1 {
+header h1 {
     color: white;
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 #clouds{
-    margin: -80px 50px 0 50px;
+    margin: -142px -10px 0 -10px;
     padding: 10px 0 0 0;
     background: #c9dbe9;
     background: -webkit-linear-gradient(top, #000000 0%, #483D8B 100%);
@@ -145,7 +147,31 @@ body {
 /* button */
 
 .button {
-    margin: 0 0 0 -180px;
+    float: right;
+    clear: both;
+    margin: 0 85px 0 0;
+}
+
+
+#image-to-spin {
+    float: right;
+    transition: transform 3s ease-out;
+    margin: 25px 40px 0 120px;
+    width: 225px;
+    height: 225px;
+}
+
+#searchbox {
+    float: left;
+    margin: -200px 100px 0 50px;
+    clear: both;
+}
+
+.guide {
+    margin: -250px 0 0 50px;
+    width: 600px;
+    height: 400px;
+    float: left;
 }
 
 #descript {
@@ -153,14 +179,22 @@ body {
     height: 200px;
 }
 
-#image-to-spin {
-    transition: transform 3s ease-out;
-    margin: 25px 0px 20px 120px;
-    width: 225px;
-    height: 225px;
+#artistContainer {
+    margin: 0 0 0 100px;
+    height: 750px;
+    width: 550px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 20px 0 20px;
+    clear: both;
+    display: none;
+    background-color: aqua;
 }
 
-#searchbox {
-    float: right;
-    margin: -15px 100px 0 0;
+#anImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
 }
